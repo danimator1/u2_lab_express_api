@@ -49,7 +49,13 @@ _note:_ you may have to run npm i, mkdir, and touch multiple times through these
 
 ### Bonus I
 - AAU I want to sort my reviews by ascending or descending order
+
+db.reviews.find().sort({ rating: 1 }).pretty()
+
 - AAU I want to sort my movies by newest or oldest
+
+db.movies.find().sort({ year_released: -1 }).pretty()
+
 - AAU I want an error message to display if I search for an Actor, Movie, or Review with an incorrect ID
 - AAU I want to Create, Update, and Delete my Actors, Movies, and Reviews using either ThunderClient or a query.js file
 
